@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+.scrollable-div {
+  overflow: auto;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #969696 transparent; /* For Firefox */
+}
+
+/* WebKit browsers (Chrome, Safari) */
+.scrollable-div::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+.scrollable-div::-webkit-scrollbar-track {
+  background: transparent; /* Track color */
+}
+
+.scrollable-div::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #969696 0%, #c4c4c4 100%); /* Gradient color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.scrollable-div::-webkit-scrollbar-button {
+  display: none; /* Hide the scrollbar buttons (arrows) */
+}
